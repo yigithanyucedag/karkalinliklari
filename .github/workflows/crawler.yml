@@ -5,12 +5,15 @@ on: [push]
 #     # - cron: "0 0 13 1/1 * ? *"
 #     - cron: "0 0/2 * 1/1 * ? *"
 
-jobs:
-  Explore-GitHub-Actions:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: "14"
-      - run: node ../../scripts/crawl.js
+runs:
+  using: "node16"
+  main: "crawl.js"
+# jobs:
+#   Explore-GitHub-Actions:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v2
+#       - uses: actions/setup-node@v2
+#         with:
+#           node-version: "14"
+#       - run: node ../../scripts/crawl.js
