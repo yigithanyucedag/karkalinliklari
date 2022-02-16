@@ -6,9 +6,11 @@ function App() {
 
   const requestData = async () => {
     fetch("https://servis.mgm.gov.tr/web/sondurumlar/kar", {
-      referrer: "https://www.mgm.gov.tr/",
-      // referrerPolicy: "strict-origin-when-cross-origin",
-      body: null,
+      headers: {
+        Host: "servis.mgm.gov.tr",
+        Origin: "https://www.mgm.gov.tr",
+        Referer: "https://www.mgm.gov.tr/",
+      },
     });
 
     // console.log(response);
