@@ -1,24 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from "react";
+import Emoji from "./components/Emoji";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  const requestData = async () => {
+    fetch("https://servis.mgm.gov.tr/web/sondurumlar/kar", {
+      referrer: "https://www.mgm.gov.tr/",
+      // referrerPolicy: "strict-origin-when-cross-origin",
+      body: null,
+    });
+
+    // console.log(response);
+  };
+
+  useEffect(() => {
+    requestData();
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container mx-auto">
+      <div className="text-center mt-10 flex flex-row items-center justify-center space-x-3 mx-5">
+        <Emoji label="Ski man" symbol="🎿" className="text-4xl" />
+        <h1 className="font-semibold text-4xl text-white">
+          Kayak Merkezleri Kar Kalınlıkları
+        </h1>
+        <Emoji label="Ski man" symbol="🎿" className="text-4xl" />
+      </div>
     </div>
   );
 }
