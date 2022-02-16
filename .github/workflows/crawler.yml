@@ -1,9 +1,9 @@
 name: MGM Data Crawler
-# on: [push]
-on:
-  schedule:
-    # - cron: "0 0 13 1/1 * ? *"
-    - cron: "0 0/2 * 1/1 * ? *"
+on: [push]
+# on:
+#   schedule:
+#     # - cron: "0 0 13 1/1 * ? *"
+#     - cron: "0 0/2 * 1/1 * ? *"
 
 jobs:
   Explore-GitHub-Actions:
