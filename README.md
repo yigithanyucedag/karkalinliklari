@@ -4,6 +4,8 @@
 
 Türkiye'deki kayak merkezlerinin güncel kar yüksekliğini gösteren bir web uygulaması
 
+[Kar Kalınlıkları - Kayak Merkezleri](https://karkalinliklari.vercel.app/)
+
 **Projede Kullanılan Teknolojiler:**
 
 - React.js
