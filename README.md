@@ -1,6 +1,6 @@
 # Kar Kalınlıkları
 
-![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=karkalinliklari) ![License](https://img.shields.io/badge/license-MIT-blue) [![GitHub stars](https://badgen.net/github/stars/Naereen/Strapdown.js)](https://github.com/yigithanyucedag/karkalinliklari/stargazers/)
+![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=karkalinliklari) ![License](https://img.shields.io/badge/license-MIT-blue) ![Stars](https://img.shields.io/github/stars/yigithanyucedag/karkalinliklari)
 
 Türkiye'deki kayak merkezlerinin güncel kar yüksekliğini gösteren bir web uygulaması
 
