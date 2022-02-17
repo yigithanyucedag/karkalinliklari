@@ -141,7 +141,7 @@ const Home: NextPage<{ data: ResortItem[] }> = ({ data }) => {
             <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
               <div className="overflow-hidden shadow-none lg:shadow-md rounded-lg">
                 <table className="min-w-full">
-                  <thead className="bg-slate-700">
+                  <thead className="bg-slate-700 bg-opacity-60">
                     <tr>
                       <th scope="col" className="py-3 pl-6 list-table-cell">
                         #
