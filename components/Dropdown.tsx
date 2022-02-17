@@ -40,7 +40,7 @@ export default function Dropdown({ label, items, onClick }: IDropdown) {
                     onClick={() => onClick(item.index)}
                     className={classNames(
                       active ? "bg-slate-700 text-slate-100" : "text-slate-400",
-                      "block px-4 py-2 text-sm font-medium cursor-pointer"
+                      "block px-4 py-2 text-sm font-medium cursor-pointer focus:outline-none"
                     )}
                   >
                     {item.label}
