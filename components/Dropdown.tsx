@@ -31,16 +31,18 @@ export default function Dropdown({ label, items, onClick }: IDropdown) {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-slate-800 focus:outline-none">
-          <div className="py-1">
+        <Menu.Items className="origin-top-right absolute overflow-hidden right-0 mt-2 w-56 rounded-md shadow-lg dark:bg-slate-800 bg-gray-100 focus:outline-none">
+          <div>
             {items.map((item, index) => (
               <Menu.Item key={index}>
                 {({ active }) => (
                   <div
                     onClick={() => onClick(item.index)}
                     className={classNames(
-                      active ? "bg-slate-700 text-slate-100" : "text-slate-400",
-                      "block px-4 py-2 text-sm font-medium cursor-pointer focus:outline-none"
+                      active
+                        ? "dark:bg-slate-700 dark:text-slate-100 bg-gray-200 text-gray-800"
+                        : "dark:text-slate-400 text-gray-600",
+                      "block px-4 py-3 text-sm font-medium cursor-pointer focus:outline-none"
                     )}
                   >
                     {item.label}

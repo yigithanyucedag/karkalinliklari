@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-slate-900 antialiased;
+  @apply bg-white dark:bg-slate-900 antialiased;
 }
 
 .bg-grid {
@@ -12,9 +12,9 @@ body {
 }
 
 .list-table-cell {
-  @apply text-xs font-medium tracking-wider text-left text-slate-400 uppercase hidden lg:table-cell;
+  @apply text-xs font-medium tracking-wider text-left dark:text-slate-400 uppercase hidden lg:table-cell;
 }
 
 .list-table-cell-item {
-  @apply bg-slate-800 bg-opacity-60 flex lg:table-row flex-row lg:flex-row flex-wrap mb-5 lg:mb-0 rounded-md lg:rounded-none shadow-md lg:shadow-none;
+  @apply bg-gray-100 dark:bg-slate-800 bg-opacity-60 flex lg:table-row flex-row lg:flex-row flex-wrap mb-5 lg:mb-0 rounded-md lg:rounded-none shadow-md lg:shadow-none;
 }
